@@ -11,9 +11,11 @@ class ViewController: UIViewController
 {
 
     //Declare Outlets and Variables
+    @IBOutlet var myImage: UIImageView!
     
-    @IBOutlet weak var myimage: UIImageView!
-   let myImage = UIImage(named: "AccentColor")
+
+   // var myImage = UIImage(named: "AccentColor")
+    var x=0
     
     override func viewDidLoad()
     {
@@ -25,16 +27,35 @@ class ViewController: UIViewController
     
     @IBAction func onButtonTap(_ sender: UIButton)
     {
-        let myImage = UIImage(named: "MMEred")
-        myimage.image = myImage
+        myImage.image = UIImage(named: "MMEred")
+     
+        if x==0 { myImage.image = UIImage(named: "MMEred")
+            x=1
+        }
+        else { myImage.image = UIImage(named:"AccentColor")
+            x=0
+            
+        }
+        
+        
         
         
         
         
     }
-
+ 
+    }
     
-    }
+    
+   
+        
+        
+        
+        
+    
+    
+    
+    
       
     
 
@@ -43,5 +64,6 @@ class ViewController: UIViewController
             
         
         
+
 
 

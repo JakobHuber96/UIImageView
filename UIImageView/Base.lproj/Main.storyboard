@@ -34,7 +34,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="myimage" destination="jZ4-HX-Jkd" id="avA-VI-4xL"/>
+                        <outlet property="myImage" destination="jZ4-HX-Jkd" id="BmK-Hj-UC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
